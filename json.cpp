@@ -212,6 +212,26 @@ class JSON {
         }
       }
 
+      // cater for exponential numbers
+      if(text[position] == 'e' || text[position] == 'E'){
+        value += text[position];
+        position += 1;
+        // cater for the exponential sign
+        if(text[position] == '-' || text[position] == '+'){
+          value += text[position];
+          position += 1;
+        }
+
+        if(!isNumeric(text[position])){
+          throw runtime_error("Invalid exponential number");
+        }
+
+        while(isNumeric(text[position])){
+          value += text[position];
+          position += 1;
+        }
+      }
+
       return {value, position};
     }
 
