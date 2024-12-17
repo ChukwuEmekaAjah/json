@@ -405,37 +405,37 @@ class JSON {
 
 };
 
-int main(int argc, char* argv[]){
-  JSON parser {};
-  //"{\"age\":-23.32, \"is_man\": true, \"who\": null, \"name\": {\"last\": \"Ajah\", \"first\": [\"Chuks\"]}}"
-  auto t = parser.parse(argv[1]);
-  // cout << t["age"].getNumber() << " that is the age" << endl;
-  // cout << t["name"].getString() << " that is the name" << endl;
-  // cout << "first item is " << t[0].getNumber() << endl;
-  // cout << "3rd item is " << t[2].getString() << endl;
-  // cout << "the key to my heart is " << t[3][2]["key"]["key"].getString() << endl;
-  // vector<JSONValue> arr {};
-  // arr.push_back(JSONValue("STRING", "Chuks"));
-  // arr.push_back(JSONValue("STRING", "Mercy"));
-  // arr.push_back(JSONValue("STRING", "Grace"));
-  // map<string, JSONValue> family{};
-  // family["children"] = JSONValue("ARRAY", arr);
-  // family["father"] = JSONValue("STRING", "Patrick");
-  // family["mother"] = JSONValue("STRING", "Priscillia");
-  // family["is_wealthy"] = JSONValue("BOOLEAN", "true");
-  // JSONValue j = JSONValue("OBJECT", family);
-  // JSONValue s = JSONValue("STRING", "Chuks");
-  // cout << "First child is " << j["children"][0].getString() << endl;
+// int main(int argc, char* argv[]){
+//   JSON parser {};
+//   //"{\"age\":-23.32, \"is_man\": true, \"who\": null, \"name\": {\"last\": \"Ajah\", \"first\": [\"Chuks\"]}}"
+//   auto t = parser.parse(argv[1]);
+//   // cout << t["age"].getNumber() << " that is the age" << endl;
+//   // cout << t["name"].getString() << " that is the name" << endl;
+//   // cout << "first item is " << t[0].getNumber() << endl;
+//   // cout << "3rd item is " << t[2].getString() << endl;
+//   // cout << "the key to my heart is " << t[3][2]["key"]["key"].getString() << endl;
+//   // vector<JSONValue> arr {};
+//   // arr.push_back(JSONValue("STRING", "Chuks"));
+//   // arr.push_back(JSONValue("STRING", "Mercy"));
+//   // arr.push_back(JSONValue("STRING", "Grace"));
+//   // map<string, JSONValue> family{};
+//   // family["children"] = JSONValue("ARRAY", arr);
+//   // family["father"] = JSONValue("STRING", "Patrick");
+//   // family["mother"] = JSONValue("STRING", "Priscillia");
+//   // family["is_wealthy"] = JSONValue("BOOLEAN", "true");
+//   // JSONValue j = JSONValue("OBJECT", family);
+//   // JSONValue s = JSONValue("STRING", "Chuks");
+//   // cout << "First child is " << j["children"][0].getString() << endl;
 
-  // cout << "First child from array is " << arr[0].data_type << endl;
+//   // cout << "First child from array is " << arr[0].data_type << endl;
 
-  // cout << "First child from STRING is " << j.getType() << endl;
-  cout << "output of stringify is" << parser.stringify(t) << endl;
-  // JSONValue s = JSONValue("STRING", string("CHUKS"));
-  //   JSONValue n = JSONValue("NUMBER", 23.322);
-  //   JSONValue b = JSONValue("BOOLEAN", true);
-  //   cout << " Value is " << s.str_value<< endl;
-  //   cout << " Value for num is " << n.d_value << endl;
-  //   cout << " Value for bool is " << b.b_value << endl;
-  return 0;
-}
+//   // cout << "First child from STRING is " << j.getType() << endl;
+//   cout << "output of stringify is" << parser.stringify(t) << endl;
+//   // JSONValue s = JSONValue("STRING", string("CHUKS"));
+//   //   JSONValue n = JSONValue("NUMBER", 23.322);
+//   //   JSONValue b = JSONValue("BOOLEAN", true);
+//   //   cout << " Value is " << s.str_value<< endl;
+//   //   cout << " Value for num is " << n.d_value << endl;
+//   //   cout << " Value for bool is " << b.b_value << endl;
+//   return 0;
+// }
